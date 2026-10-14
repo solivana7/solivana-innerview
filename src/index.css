@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* SoliVana brand-aligned shadcn vars (HSL components only) */
+    --background: 30 100% 97%;          /* soft #FFF8F0 */
+    --foreground: 28 96% 11%;           /* brown #331D01 */
+    --card: 0 0% 100%;                   /* paper #FFFFFF */
+    --card-foreground: 28 96% 11%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 28 96% 11%;
+    --primary: 26 81% 60%;               /* accent #EC9247 */
+    --primary-foreground: 0 0% 100%;
+    --secondary: 0 6% 93%;               /* coffeeLight #F0EDED */
+    --secondary-foreground: 28 96% 11%;
+    --muted: 0 6% 93%;
+    --muted-foreground: 23 13% 43%;     /* coffeeText #786455 */
+    --accent: 26 81% 60%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 72% 50%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 22 11% 76%;                /* coffee #B49F90 */
+    --input: 22 11% 76%;
+    --ring: 26 81% 60%;
+    --radius: 0.625rem;
+  }
+}
+
+@layer base {
+  * { @apply border-border; }
+  body {
+    @apply bg-soft text-brown font-body antialiased;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  h1, h2, h3, h4, h5, h6 { @apply font-heading; }
+}
